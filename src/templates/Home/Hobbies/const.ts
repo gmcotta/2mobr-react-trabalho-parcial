@@ -1,0 +1,1 @@
+export const hobbies = ['Shows', 'Séries e filmes', 'Animes e mangás', 'Guitarra', 'Cozinhar']

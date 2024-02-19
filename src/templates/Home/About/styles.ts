@@ -1,0 +1,85 @@
+import styled, { css } from "styled-components";
+
+import { Wrapper as _Wrapper } from "../../../components";
+
+export const About = styled.section`
+    width: 100vw;
+    min-height: 100vh;
+    background-color: ${({ theme }) => theme.colors.backgroundLight};
+`;
+
+export const Wrapper = styled(_Wrapper)`
+    display: flex;
+    max-width: 80rem;
+    flex-direction: column;
+    padding-top: 12rem;
+    align-items: start;
+    text-align: left;
+
+    ${({ theme }) => css`
+        @media (max-width: ${theme.breakpoints.sm}px) {
+            padding-top: 8rem;
+        }
+    `}
+`;
+
+export const AboutMe = styled.h2`
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.primary};
+    margin-bottom: 2rem;
+`;
+
+export const Text = styled.p`
+    font-size: 3.2rem;
+
+    & strong {
+        color: ${({ theme }) => theme.colors.primary};
+    }
+
+    ${({ theme }) => css`
+        @media (max-width: ${theme.breakpoints.md}px) {
+            font-size: 2.4rem;
+        }
+    `}
+
+    ${({ theme }) => css`
+        @media (max-width: ${theme.breakpoints.sm}px) {
+            font-size: 2rem;
+        }
+    `}
+`;
+
+export const AddressText = styled.p`
+    font-size: 2.4rem;
+    margin-top: 3.2rem;
+    font-weight: 600;
+
+    ${({ theme }) => css`
+        @media (max-width: ${theme.breakpoints.md}px) {
+            font-size: 2rem;
+        }
+    `}
+`;
+
+export const Description = styled.p`
+    font-size: 1.6rem;
+    margin-top: 3.2rem;
+
+    ${({ theme }) => css`
+        @media (max-width: ${theme.breakpoints.sm}px) {
+            font-size: 1.4rem;
+        }
+    `}
+`;
+
+export const SocialMediaTitle = styled.p`
+    margin-top: 3.2rem;
+    font-size: 1.6rem;
+`;
+
+export const SocialMediaButtonContainer = styled.div`
+    margin-top: 2.4rem;
+    display: flex;
+    column-gap: 2.4rem;
+`;

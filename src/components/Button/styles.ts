@@ -1,0 +1,14 @@
+import styled from "styled-components";
+
+export const Button = styled.button`
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 4rem;
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
+    font-size: 1.2rem;
+    font-weight: 600;
+`;
