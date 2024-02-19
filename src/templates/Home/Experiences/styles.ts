@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Wrapper as _Wrapper } from "../../../components";
 
 export const Experiences = styled.section`
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: ${({ theme }) => theme.colors.primary};
 `;

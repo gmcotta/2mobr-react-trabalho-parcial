@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.a`
     border: none;
     display: flex;
     align-items: center;
@@ -11,4 +11,5 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.2rem;
     font-weight: 600;
+    text-decoration: none;
 `;

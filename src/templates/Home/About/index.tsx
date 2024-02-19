@@ -1,4 +1,5 @@
-import { Button } from "../../../components";
+import { Link } from "../../../components";
+import * as C from "./const";
 import * as S from "./styles";
 
 function About() {
@@ -19,8 +20,11 @@ function About() {
         </S.Description>
         <S.SocialMediaTitle>Minhas redes:</S.SocialMediaTitle>
         <S.SocialMediaButtonContainer>
-          <Button>LinkedIn</Button>
-          <Button>GitHub</Button>
+          {C.links.map((link, index) => (
+            <Link key={index} href={link.href} target="_blank">
+              {link.text}
+            </Link>
+          ))}
         </S.SocialMediaButtonContainer>
       </S.Wrapper>
     </S.About>

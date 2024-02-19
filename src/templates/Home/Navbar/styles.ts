@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { Wrapper as _Wrapper } from "../../../components";
 
 export const Navbar = styled.nav`
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
