@@ -16,6 +16,7 @@ function Hobbies() {
             </S.HobbiesListItem>
           ))}
         </S.HobbiesList>
+        <S.YoutubeIframe src="https://www.youtube.com/embed/fKWxGKU1Q7k?si=EVwXHPW7JCbSyLzj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></S.YoutubeIframe>
       </S.Wrapper>
     </S.Hobbies>
   );

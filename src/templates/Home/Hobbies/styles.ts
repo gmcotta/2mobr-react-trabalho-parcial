@@ -5,6 +5,7 @@ export const Hobbies = styled.section`
     width: 100%;
     min-height: 100vh;
     background-color: ${({ theme }) => theme.colors.backgroundLight};
+    padding-bottom: 10rem;
 `;
 
 export const Wrapper = styled(_Wrapper)`
@@ -25,7 +26,7 @@ export const Wrapper = styled(_Wrapper)`
 export const Title = styled.h2`
     font-size: 1.6rem;
     font-weight: 600;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.primary};
     margin-bottom: 2rem;
 `;
 
@@ -40,7 +41,6 @@ export const HobbiesListItem = styled.li`
     color: ${({ theme }) => theme.colors.black};
     display: flex;
     column-gap: 0.8rem;
-    row-gap: 2.4rem;
 `;
 
 export const ListItemBullet = styled.span`
@@ -55,4 +55,17 @@ export const ListItemBullet = styled.span`
 export const Hobby = styled.p`
     font-size: 2.4rem;
     font-weight: 600;
+`;
+
+export const YoutubeIframe = styled.iframe`
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 8rem;
+    border: 0;
+
+    ${({ theme }) => css`
+        @media (max-width: ${theme.breakpoints.sm}px) {
+            margin-top: 6rem;
+        }
+    `}
 `;
