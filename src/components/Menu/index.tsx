@@ -11,6 +11,7 @@ function Menu({ links }: MenuProps) {
         type="button"
         onClick={handleMenuActive}
         isActive={isActive}
+        title={isActive ? "Fechar menu" : "Abrir menu"}
       >
         <span></span>
         <span></span>
