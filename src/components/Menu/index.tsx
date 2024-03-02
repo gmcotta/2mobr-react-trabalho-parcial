@@ -1,8 +1,11 @@
+import { memo } from "react";
+
+import * as C from './const';
 import { MenuProps } from "./menu";
 import * as S from "./styles";
 import { useMenu } from "./hooks/useMenu";
 
-function Menu({ links }: MenuProps) {
+const Menu = memo(({ links }: MenuProps) => {
   const { isActive, handleMenuActive, handleMenuLinkClick } = useMenu();
 
   return (
@@ -11,7 +14,7 @@ function Menu({ links }: MenuProps) {
         type="button"
         onClick={handleMenuActive}
         isActive={isActive}
-        title={isActive ? "Fechar menu" : "Abrir menu"}
+        title={isActive ? C.menuTexts.closeMenu : C.menuTexts.openMenu}
       >
         <span></span>
         <span></span>
@@ -32,6 +35,6 @@ function Menu({ links }: MenuProps) {
       </S.Menu>
     </>
   );
-}
+});
 
 export { Menu };
