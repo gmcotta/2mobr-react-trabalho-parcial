@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.a`
+export const Link = styled.a`
     border: none;
     display: flex;
     align-items: center;
