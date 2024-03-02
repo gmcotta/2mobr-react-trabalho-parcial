@@ -45,11 +45,11 @@ export const ExperiencesListItem = styled.li`
 
 export const ListItemBullet = styled.span`
     display: block;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
     background-color: ${({ theme }) => theme.colors.white};
     border-radius: 50%;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
 `;
 
 export const Company = styled.p`

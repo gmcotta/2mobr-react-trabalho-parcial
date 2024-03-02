@@ -1,4 +1,7 @@
-export const experiences = [
+export const experiencesContent = {
+  id: 'experiencias',
+  title: 'Experiências',
+  experiences: [
     {
       company: "FIAP",
       role: "Desenvolvedor front-end",
@@ -19,4 +22,5 @@ export const experiences = [
       role: "Analista de testes",
       period: "2019-2020",
     },
-  ];
+  ]
+};

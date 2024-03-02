@@ -1,13 +1,13 @@
-import * as C from "./const";
+import * as C from "./content";
 import * as S from "./styles";
 
 function Experiences() {
   return (
-    <S.Experiences id="experiencias">
+    <S.Experiences id={C.experiencesContent.id}>
       <S.Wrapper>
-        <S.Title>Experiências</S.Title>
+        <S.Title>{C.experiencesContent.title}</S.Title>
         <S.ExperiencesList>
-          {C.experiences.map((experience, index) => (
+          {C.experiencesContent.experiences.map((experience, index) => (
             <S.ExperiencesListItem key={index}>
               <S.ListItemBullet></S.ListItemBullet>
               <div>
