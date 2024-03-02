@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "../../../components";
 
 export const Header = styled.header`
     width: 100%;
@@ -66,28 +67,10 @@ export const LinkContainer = styled.div`
     `}
 `;
 
-export const EmailLink = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 12rem;
-    height: 4rem;
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.white};
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-`;
+export const EmailLink = styled(Link)``;
 
-export const AboutLink = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 12rem;
-    height: 4rem;
-    color: ${({ theme }) => theme.colors.white};
-    text-decoration: none;
-    font-size: 1.2rem;
+export const AboutLink = styled(Link)`
+    background-color: transparent;
 `;
 
 export const RightContainer = styled.div`

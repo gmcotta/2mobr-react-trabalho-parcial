@@ -5,7 +5,7 @@ import * as S from "./styles";
 function Navbar() {
   return (
     <S.Navbar>
-      <S.Wrapper>
+      <S.NavbarWrapper>
         <S.Logo href={C.navbarContent.logo.href}>
           {C.navbarContent.logo.text}
         </S.Logo>
@@ -17,7 +17,7 @@ function Navbar() {
           ))}
         </S.LinkContainer>
         <Menu links={C.navbarContent.links} />
-      </S.Wrapper>
+      </S.NavbarWrapper>
     </S.Navbar>
   );
 }

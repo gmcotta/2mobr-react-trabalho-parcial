@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { Wrapper as _Wrapper } from "../../../components";
+import { Wrapper } from "../../../components";
 
 export const Navbar = styled.nav`
     width: 100%;
@@ -12,7 +12,7 @@ export const Navbar = styled.nav`
     
 `;
 
-export const Wrapper = styled(_Wrapper)`
+export const NavbarWrapper = styled(Wrapper)`
     justify-content: space-between;
     align-items: center;
     position: relative;

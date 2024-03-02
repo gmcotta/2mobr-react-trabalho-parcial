@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { SectionTitle, Wrapper as _Wrapper } from "../../../components";
+import { SectionTitle, Wrapper } from "../../../components";
 
 export const About = styled.section`
     width: 100%;
@@ -8,7 +8,7 @@ export const About = styled.section`
     background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
-export const Wrapper = styled(_Wrapper)`
+export const AboutWrapper = styled(Wrapper)`
     display: flex;
     max-width: 80rem;
     flex-direction: column;
@@ -73,7 +73,7 @@ export const SocialMediaTitle = styled.p`
     font-size: 1.6rem;
 `;
 
-export const SocialMediaButtonContainer = styled.div`
+export const SocialMediaLinkContainer = styled.div`
     margin-top: 2.4rem;
     display: flex;
     column-gap: 2.4rem;
