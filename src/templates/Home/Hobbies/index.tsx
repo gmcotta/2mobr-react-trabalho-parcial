@@ -1,13 +1,13 @@
-import * as C from "./const";
+import * as C from "./content";
 import * as S from "./styles";
 
 function Hobbies() {
   return (
-    <S.Hobbies id="hobbies">
+    <S.Hobbies id={C.hobbiesContent.id}>
       <S.Wrapper>
-        <S.Title>Experiências</S.Title>
+        <S.Title>{C.hobbiesContent.title}</S.Title>
         <S.HobbiesList>
-          {C.hobbies.map((hobby, index) => (
+          {C.hobbiesContent.hobbies.map((hobby, index) => (
             <S.HobbiesListItem key={index}>
               <S.ListItemBullet></S.ListItemBullet>
               <div>
@@ -16,7 +16,12 @@ function Hobbies() {
             </S.HobbiesListItem>
           ))}
         </S.HobbiesList>
-        <S.YoutubeIframe src="https://www.youtube.com/embed/fKWxGKU1Q7k?si=EVwXHPW7JCbSyLzj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></S.YoutubeIframe>
+        <S.YoutubeIframe 
+          src={`https://www.youtube.com/embed/${C.hobbiesContent.youtubeVideo.id}`} 
+          title="YouTube video player" 
+          allow="autoplay" 
+          allowFullScreen
+        ></S.YoutubeIframe>
       </S.Wrapper>
     </S.Hobbies>
   );
