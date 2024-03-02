@@ -4,12 +4,12 @@ import * as S from "./styles";
 function Hobbies() {
   return (
     <S.Hobbies id={C.hobbiesContent.id}>
-      <S.Wrapper>
+      <S.HobbiesWrapper>
         <S.Title>{C.hobbiesContent.title}</S.Title>
         <S.HobbiesList>
           {C.hobbiesContent.hobbies.map((hobby, index) => (
             <S.HobbiesListItem key={index}>
-              <S.ListItemBullet></S.ListItemBullet>
+              <S.HobbiesListItemBullet></S.HobbiesListItemBullet>
               <div>
                 <S.Hobby>{hobby}</S.Hobby>
               </div>
@@ -22,7 +22,7 @@ function Hobbies() {
           allow="autoplay" 
           allowFullScreen
         ></S.YoutubeIframe>
-      </S.Wrapper>
+      </S.HobbiesWrapper>
     </S.Hobbies>
   );
 }

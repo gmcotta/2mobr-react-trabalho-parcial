@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import { SectionTitle, Wrapper as _Wrapper } from "../../../components";
+
+import { List, ListItem, ListItemBullet, ListItemTitle, SectionTitle, Wrapper } from "../../../components";
 
 export const Hobbies = styled.section`
     width: 100%;
@@ -8,7 +9,7 @@ export const Hobbies = styled.section`
     padding-bottom: 10rem;
 `;
 
-export const Wrapper = styled(_Wrapper)`
+export const HobbiesWrapper = styled(Wrapper)`
     display: flex;
     max-width: 80rem;
     flex-direction: column;
@@ -25,32 +26,17 @@ export const Wrapper = styled(_Wrapper)`
 
 export const Title = styled(SectionTitle)``;
 
-export const HobbiesList = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.4rem;
-`;
+export const HobbiesList = styled(List)``;
 
-export const HobbiesListItem = styled.li`
+export const HobbiesListItem = styled(ListItem)`
     color: ${({ theme }) => theme.colors.black};
-    display: flex;
-    column-gap: 0.8rem;
 `;
 
-export const ListItemBullet = styled.span`
-    display: block;
-    width: 0.8rem;
-    height: 0.8rem;
+export const HobbiesListItemBullet = styled(ListItemBullet)`
     background-color: ${({ theme }) => theme.colors.black};
-    border-radius: 50%;
-    margin-top: 1.3rem;
 `;
 
-export const Hobby = styled.p`
-    font-size: 2.4rem;
-    font-weight: 600;
-`;
+export const Hobby = styled(ListItemTitle)``;
 
 export const YoutubeIframe = styled.iframe`
     width: 100%;

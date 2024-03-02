@@ -4,12 +4,12 @@ import * as S from "./styles";
 function Experiences() {
   return (
     <S.Experiences id={C.experiencesContent.id}>
-      <S.Wrapper>
+      <S.ExperiencesWrapper>
         <S.Title>{C.experiencesContent.title}</S.Title>
         <S.ExperiencesList>
           {C.experiencesContent.experiences.map((experience, index) => (
             <S.ExperiencesListItem key={index}>
-              <S.ListItemBullet></S.ListItemBullet>
+              <S.ExperiencesListItemBullet></S.ExperiencesListItemBullet>
               <div>
                 <S.Company>{experience.company}</S.Company>
                 <S.Role>{experience.role}</S.Role>
@@ -18,7 +18,7 @@ function Experiences() {
             </S.ExperiencesListItem>
           ))}
         </S.ExperiencesList>
-      </S.Wrapper>
+      </S.ExperiencesWrapper>
     </S.Experiences>
   );
 }

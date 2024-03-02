@@ -1,5 +1,11 @@
 import styled, { css } from "styled-components";
-import { SectionTitle, Wrapper as _Wrapper } from "../../../components";
+import { 
+    List, 
+    ListItem,
+    ListItemBullet, 
+    ListItemTitle, 
+    SectionTitle, 
+    Wrapper } from "../../../components";
 
 export const Experiences = styled.section`
     width: 100%;
@@ -7,7 +13,7 @@ export const Experiences = styled.section`
     background-color: ${({ theme }) => theme.colors.primary};
 `;
 
-export const Wrapper = styled(_Wrapper)`
+export const ExperiencesWrapper = styled(Wrapper)`
     display: flex;
     max-width: 80rem;
     flex-direction: column;
@@ -26,33 +32,13 @@ export const Title = styled(SectionTitle)`
     color: ${({ theme }) => theme.colors.white};
 `;
 
-export const ExperiencesList = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.4rem;
-`;
+export const ExperiencesList = styled(List)``;
 
-export const ExperiencesListItem = styled.li`
-    color: ${({ theme }) => theme.colors.white};
-    display: flex;
-    column-gap: 0.8rem;
-    row-gap: 2.4rem;
-`;
+export const ExperiencesListItem = styled(ListItem)``;
 
-export const ListItemBullet = styled.span`
-    display: block;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: ${({ theme }) => theme.colors.white};
-    border-radius: 50%;
-    margin-top: 1.3rem;
-`;
+export const ExperiencesListItemBullet = styled(ListItemBullet)``;
 
-export const Company = styled.p`
-    font-size: 2.4rem;
-    font-weight: 600;
-`;
+export const Company = styled(ListItemTitle)``;
 
 export const Role = styled.p`
     font-size: 1.6rem;
