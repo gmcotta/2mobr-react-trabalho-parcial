@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
+import { PropsWithChildren, memo } from "react";
 import emotionIsPropValid from "@emotion/is-prop-valid";
 import { StyleSheetManager, ThemeProvider } from "styled-components";
 
 import { theme } from "../../styles/theme";
 import { GlobalStyles } from "../../styles/globalStyles";
 
-function StyledComponentsWrapper({ children }: { children: ReactNode }) {
+const StyledComponentsWrapper = memo(({ children }: PropsWithChildren) => {
     function shouldForwardProp(prop: string, elementToBeCreated: unknown): boolean {
         if (typeof elementToBeCreated === "string") {
           return emotionIsPropValid(prop)
@@ -21,6 +21,6 @@ function StyledComponentsWrapper({ children }: { children: ReactNode }) {
         </ThemeProvider>
       </StyleSheetManager>
     );
-}
+});
 
-export { StyledComponentsWrapper }
+export { StyledComponentsWrapper };
