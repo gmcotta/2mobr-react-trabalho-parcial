@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-import * as C from './const';
+import * as C from './content';
 import { MenuProps } from "./menu";
 import * as S from "./styles";
 import { useMenu } from "./hooks/useMenu";

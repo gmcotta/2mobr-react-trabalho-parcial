@@ -21,6 +21,10 @@ export const Wrapper = styled(_Wrapper)`
         @media (max-width: ${theme.breakpoints.md}px) {
             padding: 0 4rem;
         }
+
+        @media (max-width: ${theme.breakpoints.sm}px) {
+            padding: 0 2rem;
+        }
     `}
 `;
 
