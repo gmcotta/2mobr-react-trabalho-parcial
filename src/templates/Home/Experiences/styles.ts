@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Wrapper as _Wrapper } from "../../../components";
+import { SectionTitle, Wrapper as _Wrapper } from "../../../components";
 
 export const Experiences = styled.section`
     width: 100%;
@@ -22,11 +22,8 @@ export const Wrapper = styled(_Wrapper)`
     `}
 `;
 
-export const Title = styled.h2`
-    font-size: 1.6rem;
-    font-weight: 600;
+export const Title = styled(SectionTitle)`
     color: ${({ theme }) => theme.colors.white};
-    margin-bottom: 2rem;
 `;
 
 export const ExperiencesList = styled.ul`

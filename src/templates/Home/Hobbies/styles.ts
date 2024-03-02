@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Wrapper as _Wrapper } from "../../../components";
+import { SectionTitle, Wrapper as _Wrapper } from "../../../components";
 
 export const Hobbies = styled.section`
     width: 100%;
@@ -23,12 +23,7 @@ export const Wrapper = styled(_Wrapper)`
     `}
 `;
 
-export const Title = styled.h2`
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: ${({ theme }) => theme.colors.primary};
-    margin-bottom: 2rem;
-`;
+export const Title = styled(SectionTitle)``;
 
 export const HobbiesList = styled.ul`
     list-style: none;
